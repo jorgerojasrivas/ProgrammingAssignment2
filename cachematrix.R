@@ -17,7 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
   }
   
   get <- function() x
-  set_inverse <- function(inverse) m <<- inverse
+  set_inverse <- function(inverse) m <<- inverse ## scoping rules in R
   get_inverse <- function () m
   
   list(set = set, get = get, set_inverse = set_inverse, get_inverse = get_inverse)
@@ -48,4 +48,6 @@ cacheSolve <- function(x, ...) {
   
   x$set_inverse(m)
   m
+  
+  ## to test the function type in cacheSolve(makeCacheMatrix(matrix(c(1,2,3,4), nrow = 2, ncol = 2)))
 }
