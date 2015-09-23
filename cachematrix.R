@@ -1,5 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## makeCacheMatrix is a function that creates a "matrix" object that caches 
+## its inverse. 
+## cacheSolve does the actual computation of the inverse of the object returned
+## by makeCacheMatrix. cacheSolve uses the solve(X)function in R. 
 
 ## Write a short comment describing this function
 
